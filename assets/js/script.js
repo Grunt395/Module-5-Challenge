@@ -19,12 +19,10 @@ $(document).ready(function () {
             var blockHour = parseInt($(this).attr("id").split("-")[1]);
             if (blockHour < currentHour) {
                 $(this).addClass("past");
-            }
-            else if (blockHour === currentHour) {
+            } else if (blockHour === currentHour) {
                 $(this).removeClass("past");
                 $(this).addClass("present");
-            }
-            else {
+            } else {
                 $(this).removeClass("past");
                 $(this).removeClass("present");
                 $(this).removeClass("future");

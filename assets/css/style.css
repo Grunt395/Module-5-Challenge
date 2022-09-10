@@ -2,6 +2,18 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: gold;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: black 1px;
+  border-radius: 0;
+  border-bottom: 10px solid black;
 }
 
 textarea {
@@ -10,15 +22,13 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  padding: 20px;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+
+.lead {
+  font-size: 32px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .description {
@@ -34,6 +44,13 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 10px;
+}
+
+/* Added bottom margin for last row */
+.row:nth-child(9) {
+  margin-bottom: 100px;
 }
 
 .hour {
